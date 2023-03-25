@@ -4,6 +4,8 @@
 
 This game is a text adventure game for Bing Chat that escapes from earthquakes and tsunamis.
 
+[![Image illustration](./image_of_escape_from_tsunami_for_bing_chat.jpg "Image illustration")](https://www.bing.com/images/create/girl-and-girle28099s-girlfriend-are-in-a-car-when-a-flo/641ef41ca52541d39ae4b0884af53967?id=Us4uyBsmhLv8QB63oQCiNA%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP&mode=overlay)
+
 ## Purpose
 
 Your main task is to evacuate main character and girlfriend from tsunami to a safe place.
