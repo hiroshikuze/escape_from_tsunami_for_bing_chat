@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting to Perplexity...</title>
+</head>
+<body>
+    <p>Redirecting to Perplexity（転送中）</p>
+    <script>
+        /**
+         * URLパラメータを解析し、Perplexityへリダイレクトを行う関数
+         * @return {void}
+         */
+        const redirectToPerplexity = () => {
+            try {
+                console.log('Redirect process started.');
+                // URLパラメータから "q" の値を取得
+                const urlParams = new URLSearchParams(window.location.search);
+                const prompt = urlParams.get('q');
+
+                if (prompt) {
+                    console.log(`Prompt found: ${prompt}`);
+                    // Perplexityの検索URLを構築
+                    const perplexityUrl = `https://www.perplexity.ai/search?q=${encodeURIComponent(prompt)}`;
+                    console.log(`Redirecting to: ${perplexityUrl}`);
+                    // 自動リダイレクト
+                    window.location.href = perplexityUrl;
+                } else {
+                    console.warn('Prompt not found in URL parameters.');
+                    document.body.innerHTML = "Cant find prompt（プロンプトが見つかりませんでした）";
+                }
+            } catch (error) {
+                console.error('An error occurred during redirection:', error);
+                document.body.innerHTML = "Error occurred（エラーが発生しました）";
+            }
+        };
+
+        // 実行
+        redirectToPerplexity();
+    </script>
+</body>
+</html>
