@@ -49,10 +49,13 @@ The game may be interrupted in the middle of the game. This may be a limitation 
 
 [hiroshikuze](https://github.com/hiroshikuze)
 
-## 💖 Support my work
+---
+
+## 💖 応援募集 (Support my work)
+
+このプロジェクトを応援していただける方は、ぜひスポンサーおよび寄付をお願いします！
 
 If you'd like to support my projects, please consider becoming a sponsor!
 
 [![GitHub Sponsors](https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-ea4aaa?style=for-the-badge&logo=github-sponsors)](https://github.com/sponsors/hiroshikuze)
-
-[Author's wish list by Amazon(Japanese)](https://www.amazon.jp/hz/wishlist/ls/5BAWD0LZ89V9?ref_=wl_share)
+[![Amazon Wishlist](https://img.shields.io/badge/Amazon-Wishlist-orange?style=for-the-badge&logo=amazon)](https://www.amazon.jp/hz/wishlist/ls/5BAWD0LZ89V9?ref_=wl_share)
