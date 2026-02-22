@@ -14,14 +14,31 @@
         const redirectToPerplexity = () => {
             try {
                 console.log('Redirect process started.');
+
+                // アクセス制御: ローカル環境は許可し、本番環境ではREADME（GitHub）からの遷移のみ許可
+                const referrer = document.referrer;
+                const hostname = window.location.hostname;
+                const allowedPath = "hiroshikuze/escape_from_tsunami_for_bing_chat";
+                const isLocal = hostname === "127.0.0.1" || hostname === "localhost";
+
+                if (!isLocal && (!referrer || !referrer.includes(allowedPath))) {
+                    console.warn(`Access denied. Referrer: ${referrer}`);
+                    document.body.innerHTML = "Access denied. Please access from the official README.<br>（公式READMEからアクセスしてください）";
+                    return;
+                }
+
                 // URLパラメータから "q" の値を取得
                 const urlParams = new URLSearchParams(window.location.search);
                 const prompt = urlParams.get('q');
 
                 if (prompt) {
-                    console.log(`Prompt found: ${prompt}`);
+                    console.log(`Prompt found (raw): ${prompt}`);
+                    // アンダースコアを半角スペースに置換
+                    const decodedPrompt = prompt.replaceAll('_', ' ');
+                    console.log(`Prompt decoded: ${decodedPrompt}`);
+
                     // Perplexityの検索URLを構築
-                    const perplexityUrl = `https://www.perplexity.ai/search?q=${encodeURIComponent(prompt)}`;
+                    const perplexityUrl = `https://www.perplexity.ai/search?q=${encodeURIComponent(decodedPrompt)}`;
                     console.log(`Redirecting to: ${perplexityUrl}`);
                     // 自動リダイレクト
                     window.location.href = perplexityUrl;
