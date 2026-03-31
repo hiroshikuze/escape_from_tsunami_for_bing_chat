@@ -57,5 +57,7 @@ The game may be interrupted in the middle of the game. This may be a limitation 
 
 If you'd like to support my projects, please consider becoming a sponsor!
 
+[![GitHub Stars](https://img.shields.io/github/stars/hiroshikuze/escape_from_tsunami_for_bing_chat?style=for-the-badge&logo=github&color=gold&label=⭐%20Give%20a%20Star!)](https://github.com/hiroshikuze/escape_from_tsunami_for_bing_chat/stargazers)
+
 [![GitHub Sponsors](https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-ea4aaa?style=for-the-badge&logo=github-sponsors)](https://github.com/sponsors/hiroshikuze)
 [![Amazon Wishlist](https://img.shields.io/badge/Amazon-Wishlist-orange?style=for-the-badge&logo=amazon)](https://www.amazon.jp/hz/wishlist/ls/5BAWD0LZ89V9?ref_=wl_share)
